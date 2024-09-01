@@ -3,10 +3,11 @@ package com.example.backend.Service;
 import com.example.backend.Model.Album;
 import com.example.backend.Repository.AlbumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class AlbumService {
     @Autowired
     AlbumRepository albumRepository;
@@ -28,6 +29,14 @@ public class AlbumService {
         album.setPrecio(request.getPrecio());
 
         return album;
+    }
+    public Boolean deleteAlbum (Long id) {
+        try {
+            albumRepository.deleteById(id);
+            return true;
+        } catch (Exception exception){
+            return false;
+        }
     }
 
 }
