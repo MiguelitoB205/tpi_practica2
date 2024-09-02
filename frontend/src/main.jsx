@@ -14,7 +14,13 @@ root.render(
   <ContextProvider>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App/>}/>
+        <Route path='/' element={<App/>}>
+        <Route path = '/home' element={<Home/>}/>
+        <Route path="/libro/:id" element={<Detalle/>}/>
+        <Route path = '/contacto' element={<Contacto/>}/>
+        <Route path="/favs" element={<Favs/>}/>
+        </Route>
+        <Route path="*" element={<h1>Página no encontrada - Error 404</h1>}/>
       </Routes>
     </BrowserRouter>
   </ContextProvider>
