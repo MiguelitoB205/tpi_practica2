@@ -8,8 +8,13 @@ const Card = ({id, titulo, imagen }) =>{
 return(
     <div className={ isDark ? "dark" : ""}>
         <div className='card'>
-            
+            <Link to={`/album/${id}`}>
+            <h1 className={ isDark ? "dark" : ""}>{titulo}</h1><br />
+            <img src="" width="150px" height="150px" />
+            </Link>
+            <button onClick={addFav} className='favButton'>Me encanta</button>
         </div>
     </div>
 )
 }
+export default Card;
