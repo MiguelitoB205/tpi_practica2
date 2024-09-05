@@ -2,7 +2,7 @@ import React, { useContext} from 'react'
 import { Link } from "react-router-dom"
 import { ContextGlobal} from "../Context/global.context"
 
-const Card = ({id, titulo, imagen }) =>{
+const Card = ({id, titulo, imagen, addFav }) =>{
     const { state: { isDark },} = useContext(ContextGlobal);
 
 return(
@@ -10,7 +10,7 @@ return(
         <div className='card'>
             <Link to={`/album/${id}`}>
             <h1 className={ isDark ? "dark" : ""}>{titulo}</h1><br />
-            <img src="" width="150px" height="150px" />
+            <img src={imagen} width="150px" height="150px" />
             </Link>
             <button onClick={addFav} className='favButton'>Me encanta</button>
         </div>
