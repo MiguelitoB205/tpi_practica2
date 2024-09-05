@@ -14,7 +14,7 @@ html{
 }
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #f7f8ff;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ footer {
   height: 40px;
   margin-top: 2rem;
   background-color: rgb(11, 16, 90);
-  color: rgb(21, 154, 206)
+  color: rgb(185, 202, 209)
 }
 
 footer > .caja {
