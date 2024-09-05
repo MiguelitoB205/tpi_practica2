@@ -17,7 +17,7 @@ const Home = () => {
             <Card
             key={album.id}
             id={album.id}
-            titulo={album.id}
+            titulo={album.titulo}
             imagen={album.imagen}
             addFav= {() => dispatch({type: "add_fav", payload: album})}
             />

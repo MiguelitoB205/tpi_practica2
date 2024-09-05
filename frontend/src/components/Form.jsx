@@ -37,6 +37,7 @@ const Form = () => {
     }
   return (
     <>
+          <div className='error'>{isError && <p style={{color:'red'}}>Error, please, try again!</p>}</div>
       <form onSubmit={signUpUpser}>
         <div>
             <input className={styles.input}
@@ -58,7 +59,6 @@ const Form = () => {
         <div>
             <button type='submit'>Submit</button>
         </div>
-        {isError && <h1>Error, please, try again!</h1>}
       </form>
       {showCard && (
         <div className={styles.card}>

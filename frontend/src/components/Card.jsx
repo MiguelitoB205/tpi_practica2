@@ -9,7 +9,7 @@ return(
     <div className={ isDark ? "dark" : ""}>
         <div className='card'>
             <Link to={`/album/${id}`}>
-            <h1 className={ isDark ? "dark" : ""}>{titulo}</h1><br />
+            <h2 className={ isDark ? "dark" : ""}>{titulo}</h2><br />
             <img src={imagen} width="150px" height="150px" />
             </Link>
             <button onClick={addFav} className='favButton'>Me encanta</button>

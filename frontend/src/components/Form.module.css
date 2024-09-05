@@ -5,10 +5,8 @@
     background-color: lightblue;
 }
 
-.inputError{
-    border: 3px solid red;
-    border-radius: 1rem;
-    text-align: center;
+.error{
+    margin:80px
 }
 
 .card{

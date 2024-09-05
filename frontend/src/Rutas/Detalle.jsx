@@ -8,7 +8,7 @@ const Detalle = () => {
     const { isDark } = useContext(ContextGlobal);
 
     const getAlbum = async () => {
-        const res = await fetch("http://localhost:8080/album" + id);
+        const res = await fetch("http://localhost:8080/album/" + id);
         const data = await res.json();
         setAlbum(data);
     }
